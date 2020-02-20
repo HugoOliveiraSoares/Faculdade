@@ -1,8 +1,11 @@
+*.xlsm
 *.pdf
 *.PDF
 *.txt
 *.pptx
 *.docx
+*.doc
+*.odt
 *.class
 *.log
-/Algoritmos1/*.class
+*.class
