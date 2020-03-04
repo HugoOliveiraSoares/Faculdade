@@ -38,6 +38,7 @@
 *.lo
 
 .vscode/
+.~lock.*
 
 
 
