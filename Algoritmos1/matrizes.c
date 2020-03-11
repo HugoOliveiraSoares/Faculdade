@@ -1,11 +1,5 @@
-// Autor: Hugo Oliveira Soares
-// FUNÇAO: SOMA DUAS MATRIZES QUADRADAS 4x4 C=A*B
-// DATA: 21/02/2020
 #include <stdio.h>
-#include <stdlib.h>
-
-int main() 
-{
+int main() {
 	int i, j = 0; // CONTADOR DE LINHAS E  COLUNAS
 	int a[4]; // ELEMENTO DA MATRIZ
 	int linha[4] = {}; // VETOR QUE ARMAZNENA OS ELEMENTOS DE CADA LINHA
