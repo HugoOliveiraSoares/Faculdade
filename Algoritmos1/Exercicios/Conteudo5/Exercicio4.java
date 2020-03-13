@@ -18,7 +18,7 @@ public class Exercicio4 {
         System.out.print("Digite o y do ponto2: ");
         y2 = teclado.nextDouble();
 
-        distancia = Math.sqrt( Math.pow((x1 - x2),2) +  Math.pow((y1 - y2), 2));
+        distancia = Math.sqrt( Math.pow( x1 - x2, 2) +  Math.pow( y1 - y2, 2) );
 
         System.out.printf("A distancia entre os pontos (%.0f,%.0f) e (%.0f,%.0f) é de: %.4f\n", x1, y1, x2, y2, distancia);
 

@@ -1,8 +1,4 @@
-import java.util.Scanner;
-
 public class Exercicio10 {
-    // Função: Le um número intero e o imprime na vertical
-    // Autor: Hugo Oliveira Soares
 
     public static void main(String[] args){
         
