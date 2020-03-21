@@ -29,8 +29,6 @@ public class Exercicio9 {
             System.out.printf("Seu peso ideal é: %.3f\n", pesoIdeal);
 
         }
-
-
         
         teclado.close();
 
