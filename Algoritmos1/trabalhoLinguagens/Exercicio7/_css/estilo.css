@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+body {
+
+    background: url(_imagens/fundo.png) no-repeat ;
+
+    background-size: 100%;
+    font-family: arial, sans-serif;
+    margin: 0;/*Resetando o espaço externo da página*/
+    padding: 0; /*Resetando o espaço interno da página*/
+}
+
+div {
+    position: absolute;
+    top: 25%; /*Posição de acordo com o topo*/
+    left: 25%; /*Posição de acordo com o a esquerda*/
+    
+    width: 50%;
+    height: 400px;
+
+    /* background-color: #1f4e78; */
+    background-color: #ffffff; /*Cor de fundo da Área da DIV*/
+
+    box-sizing: border-box;
+    border: 1px solid white;
+
+    padding-left: 20px; /*Espaço interno a Esquerda*/
+    padding-right: 20px; /*Espaço interno a Direita*/
+    padding-bottom: 10px; /*Espaço interno Abaixo*/
+
+    /*Texto dentro da DIV*/
+    font-family: Arial, Helvetica, sans-serif; /*Fonte do texto dentro da DIV*/
+    color:black; /*Cor do texto*/
+    text-align:justify; /*Alinhamento do texto*/
+    
+}
+
+/*Formatação do titulo h1 OBS: dentro da DIV*/
+div h1
+{
+    font-size: 20px; /*Tamanho da fonte do texto*/
+    text-align: justify; /*Alinhamento do texto*/
+    border-bottom: 1px solid black; /*Borda abaixo do texto*/
+
+}
