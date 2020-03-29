@@ -29,7 +29,7 @@ public class Exercicio4
        {
             System.out.println("desnutrido.");
        
-        } else if (imc > 18 && imc < 20) 
+        } else if (imc >= 18 && imc < 20) 
         {
             System.out.println("abaixo do peso.");
         }else if(imc >= 20 && imc <= 25 )

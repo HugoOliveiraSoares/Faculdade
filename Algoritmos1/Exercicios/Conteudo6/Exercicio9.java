@@ -18,12 +18,12 @@ public class Exercicio9 {
         System.out.print("Digite o seu sexo. F para feminino e M para masculino: ");
         sexo = teclado.nextLine();
 
-        if (sexo.equals("M")) 
+        if (sexo.equalsIgnoreCase("M")) 
         {
             pesoIdeal = 72.7 * altura - 58;
             System.out.printf("Seu peso ideal é: %.3f\n", pesoIdeal);
 
-        } else if(sexo.equals("F")) 
+        } else if(sexo.equalsIgnoreCase("F")) 
         {
             pesoIdeal = 62.1 * altura - 44.7;
             System.out.printf("Seu peso ideal é: %.3f\n", pesoIdeal);
