@@ -40,6 +40,12 @@
 
 .vscode/
 .~lock.*
-
-
+.zip
+.flv
+.mp4
+ICC/
+GeometriaAnalitica/
+LogMat/
+Mat_Discreta
+Portugues/
 
