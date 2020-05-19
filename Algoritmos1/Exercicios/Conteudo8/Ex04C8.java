@@ -6,7 +6,7 @@
 */
 import java.util.Scanner;
 
-public class Ex04 {
+public class Ex04C8 {
 
     public static void main(String[] args) {
         

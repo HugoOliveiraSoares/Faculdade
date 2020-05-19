@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class Ex09 {
+public class Ex09C8 {
 
     public static void main(String[] args) {
 

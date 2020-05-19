@@ -6,7 +6,7 @@
 */
 import java.util.Scanner;
 
-public class Ex02 {
+public class Ex02C8 {
     public static void main(String[] args) {
 
         double nota;

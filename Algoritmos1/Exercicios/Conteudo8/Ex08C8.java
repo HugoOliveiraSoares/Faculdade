@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class Ex08 {
+public class Ex08C8 {
 
     public static void main(String[] args) {
         
@@ -17,7 +17,7 @@ public class Ex08 {
 
         Scanner teclado = new Scanner(System.in);
 
-        for (int i = 1; i <= 3; i++) 
+        for (int i = 1; i <= 50; i++) 
         {
             System.out.print("Digite a nota do aluno: ");
             nota = teclado.nextDouble();

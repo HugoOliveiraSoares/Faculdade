@@ -6,7 +6,7 @@
 */
 import java.util.Scanner;
 
-public class Ex01 
+public class Ex01C8 
 {
     public static void main(String[] args) 
     {

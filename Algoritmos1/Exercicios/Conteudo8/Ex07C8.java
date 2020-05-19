@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex07 {
+public class Ex07C8 {
 
     public static void main(String[] args) {
         
@@ -10,7 +10,7 @@ public class Ex07 {
 
         Scanner teclado = new Scanner(System.in);
 
-        for (aux = 0; aux <= 4; aux++)
+        for (aux = 0; aux <= 50; aux++)
         {
             System.out.print("Digite o nome do aluno: ");
             nome[aux] = teclado.nextLine();
@@ -30,7 +30,7 @@ public class Ex07 {
             }
 
             SomaIdade = SomaIdade + idade[aux];
-
+        
         }
         
 

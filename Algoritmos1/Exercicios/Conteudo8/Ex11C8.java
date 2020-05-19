@@ -9,7 +9,7 @@
 
 import java.util.Scanner;
 
-public class Ex11 {
+public class Ex11C8 {
 
     public static void main(String[] args) {
 

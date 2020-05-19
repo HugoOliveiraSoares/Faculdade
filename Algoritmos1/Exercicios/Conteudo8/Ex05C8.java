@@ -5,23 +5,23 @@
 *
 */
 
-import java.util.Random;
+// import java.util.Random;
 import java.util.Scanner;
 
-public class Ex05 {
+public class Ex05C8 {
     public static void main(String[] args) {
 
         int candidato1 = 0, candidato2 = 0, candidato3 = 0, voto = 0;
         
         Scanner teclado = new Scanner(System.in);
-        Random gerador = new Random();
+        // Random gerador = new Random();
         
         for (int x = 1; x <= 100; x++)
         {
             System.out.print("1-Fulano 2-Ciclano 3-Beltrano \n Digite o seu voto: ");
-            // voto = teclado.nextInt();
-            voto = gerador.nextInt(3) + 1;
-            System.out.println(voto);
+            voto = teclado.nextInt();
+            // voto = gerador.nextInt(3) + 1; // Gera votos aleatorios
+            // System.out.println(voto);
 
             if (voto ==  1) 
             {

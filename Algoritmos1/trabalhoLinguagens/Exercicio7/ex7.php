@@ -14,8 +14,6 @@
             $plBruto;
             $impostoRenda;
 
-            echo "Digite o salario de um dos empregados da empresa: $salario<br>";
-
             if ($salario <= 300) {
                 
                 $plBruto = 500 + $salario * 0.7;

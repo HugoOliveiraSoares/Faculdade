@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex13 {
+public class Ex13C8 {
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class Ex13 {
 
         Scanner teclado = new Scanner(System.in);
 
-        for (int aux = 1; aux <= 5; aux++)
+        for (int aux = 1; aux <= 858; aux++)
         {
             System.out.println("\n\t===================Pesquisa sobre as cidades de MG===================\n");
             System.out.print("Digite o nome da cidade: ");

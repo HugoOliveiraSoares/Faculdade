@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class Ex10 {
+public class Ex10C8 {
 
     public static void main(String[] args) {
 
@@ -41,8 +41,7 @@ public class Ex10 {
             if (aux == 1 || custoParc > custoPMaior) 
             {
                 custoPMaior = custoParc;
-                nomeInsumoMaior = nomeInsumo;
-                
+                nomeInsumoMaior = nomeInsumo;        
             }
         }
 
