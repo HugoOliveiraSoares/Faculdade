@@ -13,7 +13,7 @@ public class E01381B {
 
         Scanner teclado = new Scanner(System.in);
 
-        for (int aux = 1; aux <= 5; aux++)
+        for (int aux = 1; aux <= 545; aux++)
         {
             System.out.print("Digite a data do jogo: ");
             data = teclado.nextLine();
