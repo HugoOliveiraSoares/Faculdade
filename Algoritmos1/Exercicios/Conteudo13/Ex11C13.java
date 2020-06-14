@@ -1,17 +1,15 @@
 import java.util.Scanner;
 
-public class Ex10C13 {
+public class Ex11C13 {
     public static void main(String[] args) {
         
         String nome_aluno[] = new String[50];
-        String nome_notaMaior;
 
         int nota[] = new int[50];
-        double media_notas, somatorio_notas = 0;
-        int notaMaior = 0;
+        int indice_notaMaior = 0, notaMaior = 0;
 
         Scanner teclado = new Scanner(System.in);
-        
+
         for (int aux = 0; aux < nota.length; aux++)
         {
             System.out.print("Digite nome do aluno: ");
@@ -19,21 +17,19 @@ public class Ex10C13 {
             System.out.print("Digite a nota do aluno: ");
             nota[aux] = teclado.nextInt();
             teclado.nextLine();
-
-            somatorio_notas += nota[aux];
         }
 
-        media_notas = somatorio_notas / nota.length;
-        System.out.println();
-
-        for (int aux = 0; aux < nota.length; aux++)
-        {
-            if (nota[aux] > media_notas)
+        for (int aux = 0; aux < nota.length; aux++) {
+            if (aux == 1 || nota[aux] > notaMaior) 
             {
-                System.out.println(nome_aluno[aux]+" ficou com a nota a cima da media.");   
+                notaMaior = nota[aux];   
+                indice_notaMaior = aux;   
             }
         }
 
+        System.out.println("O aluno de maior nota é "+nome_aluno[indice_notaMaior]);
+
         teclado.close();
+
     }
 }
