@@ -5,7 +5,6 @@ public class Ex13C13 {
     public static void main(String[] args) {
         
         String meses[] = new String[12];
-        String meses_ordemAlfabetica[] = new String[12];
 
         Scanner teclado = new Scanner(System.in);
 

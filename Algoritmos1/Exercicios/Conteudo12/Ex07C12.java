@@ -12,7 +12,7 @@ public class Ex07C12 {
         System.out.print("Digite o seu nome completo: ");
         nome = teclado.nextLine();
 
-        sobrenome = nome.split(" "); // .split() retorna um array usando a regra se separação
+        sobrenome = nome.split(" "); // .split() retorna um array usando uma regra se separação
 
         tam_array = sobrenome.length;
 

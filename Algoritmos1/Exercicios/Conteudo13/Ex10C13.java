@@ -4,11 +4,9 @@ public class Ex10C13 {
     public static void main(String[] args) {
         
         String nome_aluno[] = new String[50];
-        String nome_notaMaior;
 
-        int nota[] = new int[50];
+        int nota[] = new int[8];
         double media_notas, somatorio_notas = 0;
-        int notaMaior = 0;
 
         Scanner teclado = new Scanner(System.in);
         
