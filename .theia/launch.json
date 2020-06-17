@@ -1,0 +1,146 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex01C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex01C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex02C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex02C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex03C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex03C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex04C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex04C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex05C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex05C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex06C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex06C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex07C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex07C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex08C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex08C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex09C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex09C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex10C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex10C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex11C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex11C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex12C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex12C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex13C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex13C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex14C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex14C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex15C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex15C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex16C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex16C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex17C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex17C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex18C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex18C13",
+      "projectName": "Faculdade_d9483434"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-Ex19C13<Faculdade_d9483434>",
+      "request": "launch",
+      "mainClass": "Ex19C13",
+      "projectName": "Faculdade_d9483434"
+    }
+  ]
+}
