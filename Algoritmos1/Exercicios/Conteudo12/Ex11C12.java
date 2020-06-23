@@ -8,7 +8,7 @@ public class Ex11C12 {
 
         Scanner teclado = new Scanner(System.in);
         
-        System.out.print("Digite o seu nome: ");
+        System.out.print("Digite o seu nome completo: ");
         nome = teclado.nextLine();
 
         tamanho = nome.split(" ").length;
