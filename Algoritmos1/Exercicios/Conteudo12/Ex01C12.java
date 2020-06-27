@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Ex01C12 {
+
     public static void main(String[] args) {
         
         double ponto1_x, ponto1_y, ponto2_x, ponto2_y, distancia;
