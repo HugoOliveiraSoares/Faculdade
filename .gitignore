@@ -39,6 +39,7 @@
 *.lo
 
 .vscode/
+.theia/
 .~lock.*
 .zip
 .flv
