@@ -44,9 +44,15 @@
 .zip
 .flv
 .mp4
+.jpeg
+
+# Pastas
 ICC/
 GeometriaAnalitica/
 LogMat/
 Mat_Discreta
 Portugues/
-
+Fisica1/
+IntroSistemasLogicosDigitais/
+AlgebraLinear/
+Calculo1/
