@@ -4,7 +4,7 @@ public class insertionsort {
 
         int chave;
         int j;
-        for (int i = 1; i < lista.length; i++) {
+        for (int i = 2; i < lista.length; i++) {
             chave = lista[i];
             j = i - 1;
             while (j >= 0 && lista[j] > chave) {
@@ -13,6 +13,7 @@ public class insertionsort {
             }
             lista[j + 1] = chave;
         }
+
         for (int i = 0; i < lista.length; i++) {
             System.out.print(lista[i]+" ");
         }
