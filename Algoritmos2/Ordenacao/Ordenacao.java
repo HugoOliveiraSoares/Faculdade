@@ -75,11 +75,11 @@ public class Ordenacao {
         return vet;
     }
 
-    public int[] quickSort(int[] vet, int inicio, int fim) {
+    public int[] quickSort(int[] vet, int inicio, int fim) { 
         if (inicio < fim) {
             int posicaoPivo = separar(vet, inicio, fim);
             quickSort(vet, inicio, posicaoPivo - 1);
-            quickSort(vet, posicaoPivo + 1, fim);
+            quickSort(vet, posicaoPivo + 1, fim); 
         }
         return vet;
     }
@@ -89,9 +89,9 @@ public class Ordenacao {
         int pivo = vet[inicio];
         int i = inicio + 1, f = fim;
         while (i <= f) {
-            if (vet[i] <= pivo)
+            if (vet[i] <= pivo) // Trabalha a esquerda do pivo
                 i++;
-            else if(pivo < vet[f])
+            else if(pivo < vet[f]) // Trabalha a direita do pivo
                 f--;
             else {
                 int troca = vet[i];
