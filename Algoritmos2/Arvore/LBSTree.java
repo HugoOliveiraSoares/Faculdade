@@ -47,6 +47,28 @@ public class LBSTree {
         return treeRef;
     }
 
+    public void tree_insert( Object item) {
+        LBSTreeNode treeRef = raiz;
+        LBSTreeNode tempNode = null;
+        LBSTreeNode newNode = new LBSTreeNode(item);
+
+        while (treeRef != null) {
+            tempNode = treeRef;
+            if (treeRef.compararCom(item) < 0) {
+                treeRef = treeRef.linkEsquerdo;
+            } else {
+                treeRef = treeRef.linkDireito;
+            }
+        }
+        if (tempNode == null) {
+            treeRef.item = item;
+        } else if(tempNode.compararCom(item) < 0) {
+            tempNode.linkEsquerdo = newNode;
+        }else{
+            tempNode.linkDireito = newNode;
+        }
+    }
+
     // Retirar um item da arvore
     public void retirar( Object item) {
         retirar(item, raiz);
@@ -220,6 +242,10 @@ public class LBSTree {
         return treeString;
     }
 
+    public int altura() {
+        return altura(raiz);
+    }
+
     public int altura(LBSTreeNode atual) {
         
         if (atual == null || (atual.linkEsquerdo == null && atual.linkDireito == null)) {
@@ -241,6 +267,32 @@ public class LBSTree {
             System.out.println("Erro: Arvore vazia");
             
         return x;
+    }
+
+    public int grau(Object valorItem) {
+
+        int grau = 0;
+
+        if (vazia()) {
+            
+            System.out.println("A árvore está vazia!!");
+
+        } else {
+            LBSTreeNode item = treeSearch(raiz, valorItem);
+
+            if (item == null) {
+                System.out.println("O item não encontrado!");
+            } else {
+                if (item.linkDireito != null) {
+                    grau++;
+                }
+                if (item.linkEsquerdo != null) {
+                    grau++;
+                }
+            }
+        }
+
+        return grau;
     }
 
 }

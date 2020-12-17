@@ -25,7 +25,7 @@ public class LBSTree_Main {
 
         System.out.println("Altura: " + arvore.altura(arvore.raiz));
 
-        arvore.retirar(arvore.consultarRaiz());
+        // arvore.retirar(arvore.consultarRaiz());
         System.out.println("PreOrder: " + arvore.caminhar(arvore.PreOrder));
         System.out.println("InOrder:\n " + arvore.caminhar(arvore.InOrder));
         System.out.println("Altura: " + arvore.altura(arvore.raiz));
@@ -37,5 +37,12 @@ public class LBSTree_Main {
         System.out.println("PreOrder: " + arvore.caminhar(arvore.PreOrder));
         System.out.println("Altura: " + arvore.altura(arvore.raiz));
       
+        arvore.tree_insert("48");
+        arvore.tree_insert("15");
+        arvore.tree_insert("10");
+        arvore.tree_insert("17");
+        System.out.println("PreOrder: " + arvore.caminhar(arvore.PreOrder));
+        System.out.println("InOrder: " + arvore.caminhar(arvore.InOrder));
+        System.out.println("PostOrder: " + arvore.caminhar(arvore.PostOrder));
     }
 }
