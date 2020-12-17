@@ -35,6 +35,7 @@ public class HashTable {
     protected HashCelula[] hashArray; // armazenador de objetos
     protected boolean enderecoAberto; // endereçamento aberto(true) ou (false)
     protected boolean useReHash;
+    protected int colisoes;
 
     // Construtor com armazenador com 10 posições
     public HashTable(){
@@ -48,6 +49,7 @@ public class HashTable {
         useReHash = false;
         capacidade = maxCapacidade;
         hashArray = new HashCelula[capacidade];
+        colisoes = 0;
     }
 
     // Função Hash para calcular o endereçamento a partir da chave
@@ -98,15 +100,18 @@ public class HashTable {
         int x;
         
         if (useReHash) 
-            x = rehash(valor);
+            x = rehash(valor); // anterior
         else 
-            x = (valor + 1) % capacidade;
+            x = (valor + 1) % capacidade; // proximo
         
         return x;
     }
 
-    // Inserir dado na tabela
+    public int numeroColisao() {
+        return colisoes;
+    }
 
+    // Inserir dado na tabela
     public void inserir(String valor) {
         int k = 0;
         k = funcaoHash(valor, capacidade);
@@ -140,6 +145,7 @@ public class HashTable {
         } else {
             hashArray[n] = new HashCelula(valor);
             contador++;
+            colisoes++;
         }
     }
 
