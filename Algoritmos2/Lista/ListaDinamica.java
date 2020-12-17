@@ -181,4 +181,37 @@ public class ListaDinamica {
         return copia;
     }
 
+    public int buscar(Object item) {
+
+        Celula x = inicio;
+        int posicao = 1;
+
+        if (vazia()) {
+            System.out.println("Erro: Lista Vazia");
+        } else {
+            while ( x.item != item ) {
+                x = x.link;
+                posicao++;
+            }
+        }
+
+        return posicao;
+    }
+
+    public void trocarItens(Object item1, Object item2) {
+        
+
+        if (vazia()) {
+            System.out.println("Erro: Lista vazia");
+        } else {
+            int posicaoItem1 = buscar(item1);
+            int posicaoItem2 = buscar(item2);
+            
+            retirar(posicaoItem1);
+            retirar(posicaoItem2 - 1);
+            inserir(item2, posicaoItem1);
+            inserir(item1, posicaoItem2);    
+        }
+    }
+
 }

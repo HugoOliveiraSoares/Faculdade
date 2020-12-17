@@ -2,7 +2,8 @@ public class TesteLista {
     public static void main(String[] args) {
         
         // listaEstatica();
-        listaDinamica();
+        // listaDinamica();
+        TesteLista();
         
     }
 
@@ -129,4 +130,20 @@ public class TesteLista {
 
     }
 
+    private static void TesteLista() {
+
+        ListaDinamica listaDinamica = new ListaDinamica();
+
+        listaDinamica.inserir("A");
+        listaDinamica.inserir("B");
+        listaDinamica.inserir("C");
+        listaDinamica.inserir("D");
+
+        System.out.println("Conteudo: "+ listaDinamica.toString());
+
+        listaDinamica.trocarItens("A", "C");
+
+        System.out.println("Conteudo: " + listaDinamica.toString());
+        
+    }
 }
