@@ -26,6 +26,10 @@ public class ListaEstatica {
         return contador;
     }
 
+    public int capacidadeLista() {
+        return capacidade;
+    }
+
     public boolean chaveValida(int posicao) {
         return 1 <= posicao && posicao <= contador;
     }
@@ -35,7 +39,7 @@ public class ListaEstatica {
     }
 
     public void inserirInicio(Object newItem) {
-        inserir(newItem, 0);
+        inserir(newItem, 1);
     }
 
     public void inserirFim(Object newItem) {
@@ -193,4 +197,37 @@ public class ListaEstatica {
         return fim == 0 ? itemArray[contador-1] :itemArray[fim-1];
     }
     
+
+    public void ordenar() {
+
+        if (vazia()) {
+            System.out.println("Erro: Lista vazia!");
+        } else {
+            Object auxItem = null;
+
+            try {
+                for (int i = 0; i < contador; i++) {
+                    for (int j = 0; j < contador - 1; j++) {
+                        if (Integer.parseInt(itemArray[j].toString()) > Integer.parseInt(itemArray[j + 1].toString())) {
+                            auxItem = itemArray[j];
+                            itemArray[j] = itemArray[j + 1];
+                            itemArray[j + 1] = auxItem;
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                
+                for (int i = 0; i < contador; i++) {
+                    for (int j = 0; j < contador - 1; j++) {
+                        if ( itemArray[j].toString().compareTo(itemArray[j + 1].toString()) > 0) {
+                            auxItem = itemArray[j];
+                            itemArray[j] = itemArray[j + 1];
+                            itemArray[j + 1] = auxItem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
