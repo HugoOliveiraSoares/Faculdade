@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rest com SpringBoot</title>
+</head>
+<body>
+
+    <nav>
+        <a href="Nav"></a>
+        <ul>
+            <li><a href="#header">Introdução</a></li>
+            <li><a href="#aside">O que é um endpoint</a></li>
+            <li><a href="#article">Artigo</a></li>
+            <li><a href="#footer">Autor</a></li>
+        </ul>
+    </nav>
+
+    <h1>Construindo uma API REST com SpringBoot</h1>
+
+    <article id="article">
+
+        <header id="#header">
+            <h2>Introdução</h2>
+        </header>
+
+        <p>Hoje vamos construir uma API que gera números aleatórios para a loteria e associa ao email do apostador.</p>
+        <p>Vamos utilizar o SpringBoot para nos auxiliar nas configurações do projeto, pois ele apresenta vários módulos
+        pré-configurados e podemos selecionar através dos starters (são dependências que agrupam outras dependências) incluindo
+        no <strong>pom.xml</strong> do projeto.</p>
+        <p>Para facilitar o começo do projeto vamos acessar o site <a href="https://start.spring.io/">start spring</a>, ele é uma ferramenta que nos auxilia
+        na criação do projeto e a selecionar as dependências.</p>
+        
+        <h2>Dependências</h2>
+        <p>O SpringWeb contem uma serie de utilitários que nos auxiliam na configuração de endpoints através de notações, nos
+        permitindo criar urls amigáveis ao usuário. Também traz consigo o servidor Tomcat por padrão tirando a necessidade de o
+        instalar na nossa máquina.</p>
+        <p>SpringData JPA nos auxilia na persistência dos dados trazendo as interfaces do JPA e as implementações do Hibernate,
+        facilitando nas consultas ao banco de dados não precisando ter que implementar cada query manualmente.</p>
+        <p>Depois de selecionar a dependências e baixar o zip do projeto descompacte e o abra com a sua IDE de preferência, eu
+        utilizarei o Intellij.</p>
+
+        <h2>Criando endpoints</h2>
+
+        <aside id="aside">
+            <p>Um endpoint de um web service é a URL onde seu serviço pode ser acessado por uma aplicação cliente.</p>
+        </aside>
+        
+        <p>Agora com o projeto aberto crie um pacote chamado BetController nele ira conter os endpoints de acesso a API. Elas são
+        "/newbet" e "/getbyemail".</p>
+        <p>Depois de selecionar a dependências e baixar o zip do projeto descompacte e o abra com a sua IDE de preferência, eu
+        utilizarei o Intellij.</p>
+        <p>O método addNewUser() marcado com a anotação @PostMapping será responsável por receber o email do apostador em formato
+        JSON e passar para a camada de service, mas como temos a anotação no método temos todos os parsers já incluidos.</p>
+
+        <code>
+            @PostMapping(path = "/newbet") <br>
+            public ResponseEntity<BetEntity> addNewUser(@RequestBody BetEntity betEntity) { <br>
+            &emsp; return new ResponseEntity<>(betService.requestNewBet(betEntity), HttpStatus.CREATED); <br>
+            }
+        </code>
+        
+        <br>
+
+        O método <code>getbyEmail()</code> marcado com a anotação @GetMapping é responsável por receber o email como parâmetro na url para
+        fazer uma pesquisa de quais apostas o email tem associado e retorna a lista no da pagina.
+
+
+    </article>
+
+    <br>
+    <footer id="footer">
+        <p>Autor: Hugo Oliveira Soares</p>
+        <p>Email: hugoliveira.soares@gmail.com</p>
+        <a href="https://www.linkedin.com/in/hugooliveirasoares/](https://www.linkedin.com/in/hugooliveirasoares/">Linkedin</a>
+    </footer>
+
+</body>
+</html>
