@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+
+<body>
+
+    <h1>Main</h1>
+    <hr>
+
+    <!--
+        A tag <main> deve incluir o conteúdo principal (main) da página. Esse conteúdo
+        deve ser único em todo o documento.
+        Devem ficar fora da tag <main> conteúdos que se repetem em outras páginas da
+        aplicação como por exemplo barras de navegação e rodapés.
+
+        A tag <main> não pode ser descentente de outras tags como: article, aside, 
+        footer, header ou nav.
+     -->
+
+    <!--
+         Exemplo 1: Exemplo de uma estrutura básica e completa de uma página 
+         fonte: https://www.w3.org/TR/2016/REC-html51-20161101/grouping-content.html#the-main-element
+     -->
+
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Título principal da página -->
+        <h1>The Border Terrier</h1>
+        <!-- Links relevantes de navegação -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="health.html">Health</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <h2>Welcome!</h2>
+        <p>This site is all about the Border Terrier, the best breed of dog
+            that there is!</p>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <small>Copyright © <time datetime="2013">2013</time> by I. Devlin</small>
+    </footer>
+
+    <!-- 
+          Notar que no exemplo acima, como o header e o rodapé deverão se repetir
+          em outras páginas, esses elementos ficaram de fora da tag <main>
+        -->
+
+    <hr>
+
+
+    <!--
+         Exemplo 2: Exemplo com outro elementos 
+         fonte: https://www.w3.org/TR/2016/REC-html51-20161101/grouping-content.html#the-main-element
+     -->
+    <header>
+        <h1>The Border Terrier</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="health.html">Health</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+            <header>
+                <h2>About</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#basic">Basic</a></li>
+                        <li><a href="#app">Appearance</a></li>
+                        <li><a href="#temp">Temperament</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="basic">
+                <h3>Basic Information</h3>
+                <p>The Border Terrier is a small, rough-coated breed of
+                    dog of the terrier group, originally bred as fox and vermin
+                    hunters. [...]</p>
+            </section>
+
+            <section id="app">
+                <h3>Appearance</h3>
+                <p>Identifiable by their otter-shaped heads, Border Terriers
+                    have a broad skull and short (although many be fairly long),
+                    strong muzzle with a scissors bite. [...]</p>
+            </section>
+
+            <section id="temp">
+                <h3>Temperament</h3>
+                <p>Though sometimes stubborn and strong willed, border terriers
+                    are, on the whole very even tempered, and are friendly and rarely
+                    aggressive. [...] </p>
+            </section>
+
+            <footer>
+                <a href="#basic">Basic</a> -
+                <a href="#app">Appearance</a> -
+                <a href="#temp">Temperament</a>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <small>Copyright © <time datetime="2013">2013</time> by I. Devlin</small>
+    </footer>
+
+    <hr>
+
+    <!--
+         Exemplo 3: Exemplo de uma estrutura básica com tags aside utilizadas para propaganda
+         fonte: https://www.w3.org/TR/2016/REC-html51-20161101/grouping-content.html#the-main-element
+     -->
+
+    <header>
+        <h1>The Border Terrier</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="health.html">Health</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome!</h2>
+        <p>This site is all about the Border Terrier, the best breed of dog
+            that there is!</p>
+    </main>
+
+    <aside class="advert">
+        <h2>Border Farm Breeders</h2>
+        <p>We are a certified breeder of Border Terriers, contact us at...</p>
+    </aside>
+
+    <aside class="advert">
+        <h2>Grumpy’s Pet Shop</h2>
+        <p>Get all your pet’s needs at our shop!</p>
+    </aside>
+
+    <footer>
+        <small>Copyright © <time datetime="2013">2013</time> by I. Devlin</small>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside</title>
+</head>
+
+<body>
+
+    <!-- 
+        O elemento aside representa uma seção em que seu conteúdo é tangencialmente
+        relacionado ao conteúdo de seu elemento pai e que pode ser separado sem que
+        o conteúdo pai perca o sentido.
+
+        Uma analogia a esse elemento são as barras laterais em livros. Essas barras
+        laterais nos livros, complementam o conteúdo principal da página.
+
+        Também podem ser utlizados para propagandas, para grupos de elementos nav e 
+        para outros elementos que podem ser separados do conteúdo principal das seções 
+        dos seus ancestrais mais próximos.
+    -->
+
+    <!--
+        Exemplo 1
+        fonte: https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#the-aside-element 
+    -->
+    <p>He later joined a large company, continuing on the same work.
+        <q>I love my job. People ask me what I do for fun when I’m not at
+            work. But I’m paid to do my hobby, so I never know what to
+            answer. Some people wonder what they would do if they didn’t have to
+            work... but I know what I would do, because I was unemployed for a
+            year, and I filled that time doing exactly what I do now.</q>
+    </p>
+
+    <!-- 
+        O conteúdo a seguir é uma citação. Dessa forma fica claro sua característica
+        tangencial ao conteúdo anestral mais próximo. Além disso caso esse conteúdo
+        seja retirado, o conteúdo anecestral mais próximo não perde seu sentido.
+    -->
+    <aside>
+        <q> People ask me what I do for fun when I’m not at work. But I’m
+            paid to do my hobby, so I never know what to answer. </q>
+    </aside>
+
+    <p>Of course his work — or should that be hobby? — isn’t his only passion. He also enjoys other pleasures.</p>
+
+    <hr>
+
+    <!--
+    Exemplo 2
+    fonte: https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#the-aside-element 
+    -->
+
+    <!-- 
+        cabeçalho do blog
+        Note que o título é o principal de toda página uma vez
+        que está utilizando a tag h1
+     -->
+    <header>
+        <h1>My wonderful blog</h1>
+        <p>My tagline</p>
+    </header>
+
+    <aside>
+        <!--
+            Esta <aside> contém duas seções de navegação que são tangencialmente 
+            relacionadas com o conteúdo da página: 
+            - lista de links para outros blogs, sites, links úteis, etc (blogroll) e 
+            - lista de links para posts desse blog
+        -->
+        <nav>
+            <h2>My blogroll</h2>
+            <ul>
+                <li><a href="https://blog.example.com/">Example Blog</a>
+            </ul>
+        </nav>
+        <nav>
+            <h2>Archives</h2>
+            <ol reversed>
+                <li><a href="/last-post">My last post</a>
+                <li><a href="/first-post">My first post</a>
+            </ol>
+        </nav>
+    </aside>
+
+    <aside>
+        <!--
+            Esta aside também é tangencialmente relacionada com o conteúdo
+            da página uma vez que contém as mensagens do autor no twitter
+        -->
+        <h2>Twitter Feed</h2>
+        <blockquote cite="https://twitter.example.net/t31351234">
+            I’m on vacation, writing my blog.
+        </blockquote>
+        <blockquote cite="https://twitter.example.net/t31219752">
+            I’m going to go on vacation soon.
+        </blockquote>
+    </aside>
+
+    <!-- Note que os artigos a seguir possuem cabeçalho, conteúdo e rodapé -->
+    <article>
+        <!-- Essa é uma postagem do blog -->
+        <h2>My last post</h2>
+        <p>This is my last post.</p>
+        <footer>
+            <p><a href="/last-post" rel=bookmark>Permalink</a>
+        </footer>
+    </article>
+
+    <article>
+        <!-- Essa também é uma postagem do blog -->
+        <h2>My first post</h2>
+        <p>This is my first post.</p>
+        <aside>
+            <!--
+                Para ser considerado correto, o conteúdo desse <aside> 
+                deve ser sobre a primeira postagem do blog uma vez que está dentro 
+                do elemento <article>
+
+                Seria errado, por exemplo, colocar aqui a lista de links úteis 
+                (inserida no início), já que essa lista não está diretamente relacionada
+                com esse primeiro posta mas com a página como um todo
+            -->
+            <h1>Posting</h1>
+            <p>While I’m thinking about it, I wanted to say something about
+                posting. Posting is fun!</p>
+        </aside>
+        <footer>
+            <p><a href="/first-post" rel=bookmark>Permalink</a>
+        </footer>
+    </article>
+
+    <footer>
+        <!--
+            Devido à relavância dos links, eles foram inseridos em uma tag nav
+            Nem toda lista de links precisa ser incluída em uma tag nav
+            Somente quando essa lista for considerada relevante por aquele que
+            está definindo o conteúdo da página 
+        -->
+        <nav>
+            <a href="/archives">Archives</a> — <a href="/about">About me</a> — <a href="/copyright">Copyright</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

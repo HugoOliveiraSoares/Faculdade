@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section</title>
+</head>
+
+<body>
+    <h1>Section</h1>
+    <hr>
+
+    <!--
+        O elemento section representa uma seção genérica do documento ou aplicação. 
+        Nesse contexto ela representa um agrupamento temático de conteúdo.
+        Cada seção deve ser identificada por elementos h1-h6 assim como filhos de 
+        outras seções. 
+    -->
+
+    <!--
+        Exemplo 1
+        fonte: https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#the-section-element
+    -->
+    <article>
+        <header>
+            <h2>Apples</h2>
+            <p>Tasty, delicious fruit!</p>
+        </header>
+        <p>The apple is the pomaceous fruit of the apple tree.</p>
+        <section aria-label="Red apples.">
+            <h3>Red Delicious</h3>
+            <p>These bright red apples are the most common found in many
+                supermarkets.</p>
+        </section>
+        <section aria-label="Green apples.">
+            <h3>Granny Smith</h3>
+            <p>These juicy, green apples make a great filling for
+                apple pies.</p>
+        </section>
+    </article>
+
+    <hr>
+
+    <!--
+        Exemplo 2
+        fonte: https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#the-section-element
+    -->
+    <h1>Graduation</h1>
+    <section>
+        <h2>Ceremony</h2>
+        <p>Opening Procession</p>
+        <p>Speech by Validactorian</p>
+        <p>Speech by Class President</p>
+        <p>Presentation of Diplomas</p>
+        <p>Closing Speech by Headmaster</p>
+    </section>
+    <section>
+        <h2>Graduates</h2>
+        <ul>
+            <li>Molly Carpenter</li>
+            <li>Anastasia Luccio</li>
+            <li>Ebenezar McCoy</li>
+            <li>Karrin Murphy</li>
+            <li>Thomas Raith</li>
+            <li>Susan Rodriguez</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!--
+        Exemplo 3
+        fonte: https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#the-section-element
+    -->
+
+    <article class="book">
+        <header>
+            <h2>My Book</h2>
+            <p>A sample with not much content</p>
+            <p><small>Published by Dummy Publicorp Ltd.</small></p>
+        </header>
+
+        <section class="chapter">
+            <h3>My First Chapter</h3>
+            <p>This is the first of my chapters. It doesn’t say much.</p>
+            <p>But it has two paragraphs!</p>
+        </section>
+        <section class="chapter">
+            <h3>It Continues: The Second Chapter</h3>
+            <p>Bla dee bla, dee bla dee bla. Boom.</p>
+        </section>
+        <section class="chapter">
+            <h3>Chapter Three: A Further Example</h3>
+            <p>It’s not like a battle between brightness and earthtones would go
+                unnoticed.</p>
+            <p>But it might ruin my story.</p>
+        </section>
+        <section class="appendix">
+            <h3>Appendix A: Overview of Examples</h3>
+            <p>These are demonstrations.</p>
+        </section>
+        <section class="appendix">
+            <h3>Appendix B: Some Closing Remarks</h3>
+            <p>Hopefully this long example shows that you <em>can</em> style
+                sections, so long as they are used to indicate actual sections.</p>
+        </section>
+    </article>
+
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+</head>
+
+<body>
+
+    <h1>Article</h1>
+    <hr>
+
+    <!--
+        Um artigo deve fazer sentido por si só e deve ser possível distribuí-lo 
+        independentemente do resto do site. Fontes potenciais para o <article> elemento:
+        Postagem no fórum, Postagem no blog, Notícia.
+
+        Quando um elemento <article> está aninhado, o elemento interior representa 
+        um artigo relacionado com o elemento exterior. Por exemplo, os comentários do post 
+        de um blog podem ser elementos <article> aninhados em <article> representando 
+        o post do blog. Cada artigo deve ser identificado por uma das 
+        tags h1-h6 de acordo com seu nível na estrutura do artigo exterior
+        
+        Informações sobre o autor de um elemento <article> podem ser fornecidas através 
+        do elemento <address>, mas ele não se aplica aos elementos <article> aninhados.
+
+        A data e hora de publicação de um elemento <article> pode ser descrita usando 
+        o atributo pubdate de um elemento <time>.
+    -->
+
+    <!--
+        Exemplo de article utilizando header
+        O artigo deve ser um conteúdo independente e fazer sentido por si só
+        fonte: https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#the-article-element
+    -->
+    <article>
+        <!-- Cabeçalho do artigo-->
+        <header>
+            <!-- Título do artigo -->
+            <h2><a href="https://herbert.io">Short note on wearing shorts</a></h2>
+            <p>Posted on Wednesday, 10 February 2016 by Patrick Lauke.
+                <a href="https://herbert.io/short-note/#comments">6 comments</a>
+            </p>
+        </header>
+        <!-- Conteúdo do artigo -->
+        <p>A fellow traveller posed an interesting question: Why do you wear shorts rather than
+            longs? The person was wearing culottes as the time, so I considered the question equivocal in nature,
+            but I attempted to provide an honest answer despite the dubiousness of the questioner’s dress.</p>
+        <p>The short answer is that I enjoy wearing shorts, the long answer is...</p>
+        <p><a href="https://herbert.io/short-note/">Continue reading: Short note on
+                wearing shorts</a></p>
+    </article>
+
+    <hr>
+
+    <!-- 
+        Nesse outro exemplo de artigo, repare a hierarquia de títulos em H2, H3
+        Além disso foi incluido também o elemento section que envolve os comentários
+        fonte: https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#the-article-element
+    -->
+    <article itemscope itemtype="https://schema.org/BlogPosting">
+        <header>
+            <h2 itemprop="headline">The Very First Rule of Life</h2>
+            <p><time itemprop="datePublished" datetime="2009-10-09">3 days ago</time></p>
+        </header>
+        <p>If there’s a microphone anywhere near you, assume it’s hot and
+            sending whatever you’re saying to the world. Seriously.</p>
+        <p>...</p>
+        <section>
+            <h3>Comments</h3>
+            <ol>
+                <li itemprop="comment" itemscope itemtype="https://schema.org/UserComments" id="c1">
+                    <p>Posted by: <span itemprop="creator" itemscope itemtype="https://schema.org/Person">
+                            <span itemprop="name">George Washington</span>
+                        </span></p>
+                    <p><time itemprop="commentTime" datetime="2009-10-10">15 minutes ago</time></p>
+                    <p>Yeah! Especially when talking about your lobbyist friends!</p>
+                <li itemprop="comment" itemscope itemtype="https://schema.org/UserComments" id="c2">
+                    <p>Posted by: <span itemprop="creator" itemscope itemtype="https://schema.org/Person">
+                            <span itemprop="name">George Hammond</span>
+                        </span></p>
+                    <p><time itemprop="commentTime" datetime="2009-10-10">5 minutes ago</time></p>
+                    <p>Hey, you have the same first name as me.</p>
+                </li>
+            </ol>
+        </section>
+    </article>
+
+    <hr>
+
+    <!-- 
+        Exemplo de article com aside (ambos com header)
+        Note que existem dois cabeçalhos
+        - O primeiro é o cabeçalho do artigo proprimaente dito 
+        - O segundo é o cabeçalho do aside 
+        Repare que o conteúdo do aside está relacionado e é complementar ou tangencial
+        ao assunto do artigo principal. 
+        fonte: https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#the-article-element
+    -->
+
+    <article>
+        <header>
+            <h1>Flexbox: The definitive guide</h1>
+            <aside>
+                <header>
+                    <h2>About the author: Wes McSilly</h2>
+                    <p><a href="./wes-mcsilly/">Contact him! (Why would you?)</a></p>
+                </header>
+                <p>Expert in nothing but Flexbox. Talented circus sideshow.</p>
+            </aside>
+        </header>
+        <p>The guide about Flexbox was supposed to be here, but it turned out Wes wasn’t a Flexbox expert either.</p>
+    </article>
+
+
+
+</body>
+
+</html>
