@@ -9,8 +9,6 @@
 *.class
 *.log
 *.class
-*.png
-*.jpg
 *.mcworld
 
 ### C ###
