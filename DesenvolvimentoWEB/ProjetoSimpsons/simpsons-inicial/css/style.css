@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FED41E;
+}
+
+a{
+    color: #232323;
+    text-decoration: none;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/****************************************
+ *
+ * Navbar
+ *
+ ***************************************/
+
+header{
+    padding-bottom: 20px;
+}
+
+#logo{
+    font-size: 3rem; /* Multiplicar 3 vezes o padrão de fonte do dispositivo */
+    padding: 10px;
+    text-align: center;
+}
+
+/* 
+ * precisa setar primeito a largura desejada 
+ *
+ *
+ */
+
+ #barra-menu{
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+     border: #232323 1px solid;
+     margin-bottom: 5px;
+ }
+
+ #nav-links{
+     text-align: center;
+     font-size: 1.2rem;
+ }
+
+ .nav-item{
+     display: inline;
+     padding: 20px;
+ }
+
+ /* BANNER */
+
+ #banner{
+     height: 100vh; /* 100% da parte visivel */
+     background-image: url("../img/simpsons-capa-1920x1080.jpg");
+    /* aqui alinha nos eixos horizontal e vertical */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+ }
+
+ .color-overlay{
+     width: 100%;
+     height: 100%;
+     background: black;
+     opacity: 0.6;
+     position: absolute;
+ }
+
+ #conteudo-banner{
+     margin-top: 30vh;
+     text-align: center;
+     color: white;
+     z-index: 1;
+ }
+
+ #conteudo-banner h1{
+     font-size: 4.5rem;
+     padding: 10px;
+ }
+
+ #conteudo-banner p{
+     font-size: 2.5rem;
+     padding: 0 15px;
+     font-weight: lighter;
+ }
+
+ /* SOBRE */
+
+ #sobre{
+     width: 70vw;
+     height: 100vh;
+     margin: 50px auto 50px auto;
+     color: #767676;
+ }
+
+ #sobre h2{
+     font-size: 3.0rem;
+     margin-bottom: 20px;
+ }
+
+ #sobre p{
+     font-size: 1.2rem;
+     margin-bottom: 20px;
+     line-height: 1.8rem;
+ }
+
+ /* FAMILIA */
+
+ #familia{
+     background-color: #232323;
+     padding-top: 50px;
+     padding-bottom: 50px;
+ }
+
+ #familia-container{
+     width: 70%;
+     margin-right: auto;
+     margin-left: auto;
+     display: block;
+ }
+
+#familia header h2{
+     color: #FED41E;
+     font-size: 3.0rem;
+     margin-bottom: 20px;
+ }
+
+ #familia header p{
+     color: white;
+     font-size: 1.2rem;
+ }
+
+ .membro-familia{
+     background-color: #FED41E;
+     color: #232323;
+     padding: 20px;
+     margin-top: 50px;
+ }
+
+ .membro-familia h3{
+     font-size: 2.2rem;
+     margin-bottom: 5px;
+ }
+
