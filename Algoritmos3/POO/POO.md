@@ -43,11 +43,9 @@ Uma nova classe pode ser criada através de **herança**, a **subclasse** começ
 ## Interfaces
 Coleções de métodos relacionados que normalmente permitem informar aos objetos o que fazer, mas não como fazer. 
 
+# Referências
 
-
-
-
-
+Deitel, Paul. Java: como programar/ Paul Deitel, Harvey Deitel; tradução Edson  Furmankiewicz; revisão técnica Fabio Lucchini. --São Paulo: Pearson  Educationdo Brasil, 2017.
 
 
 
