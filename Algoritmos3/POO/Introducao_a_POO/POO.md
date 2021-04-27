@@ -37,11 +37,27 @@ Um objeto, da mesma forma, tem atributos que ele incorpora à medida que é usad
 ## Encapsulamento e ocultamento de informações 
 Classes (e seus objetos) **encapsulam**, isto é, contêm seus atributos e métodos. Os atributos e métodos de uma classe estão intimamente relacionados. Os objetos podem se comunicar entre si, mas eles em geral não sabem como outros objetos são implementados.
 
-## [Herança](/Herança/Heranca.md)
+## [Herança](Heranca/Heranca.md)
 Uma nova classe pode ser criada através de **herança**, a **subclasse** começa com as características de uma classe existente, chamada **superclasse**, personalizando-as e adicionando aspectos próprios.
 
-## Interfaces
-Coleções de métodos relacionados que normalmente permitem informar aos objetos o que fazer, mas não como fazer. 
+## [Interfaces](Interface/Interface.md)
+Coleções de métodos relacionados que normalmente permitem informar aos objetos o que fazer, mas não como fazer.
+
+## Métodos e classes final
+
+Um método que é declarado `final` em uma superclasse não pode ser sobescrito em uma subclasse.
+
+Métodos declarados `private` são implicitamente `final`, porque você não pode sobrescrevê-los em uma subclasse.
+
+Métodos que são declarados `static` são implicitamente `final`.
+
+Uma declaração do método `final` nunca pode mudar, assim todas as subclasses utilizam a mesma implementação do método; e chamamos a métodos `final` são resolvidas em tempo de compilação - isso é conchecido como **vinculação estática**.
+
+O compilador pode otimizar os programas removendo as chamadas para os métodos final e colocando seu código expandido e linha em cadas  local de chamada do método.
+
+Uma classe que é declarada `final` não pode ser estendida.
+
+Todos os métodos em uma classe `final` são implicitamente `final`.
 
 # Referências
 
