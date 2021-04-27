@@ -1,3 +1,5 @@
+import Heranca.*;
+
 public class HerancaTest {
     public static void main(String[] args) {
 

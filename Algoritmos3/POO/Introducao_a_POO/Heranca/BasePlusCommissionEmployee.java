@@ -1,3 +1,5 @@
+package Heranca;
+
 // A classe BasePlusCommissionEmployee é herdada de CommissionEmployee
 // e acessa os dados private da superclasse via métodos public herdados.
 
